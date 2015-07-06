@@ -1,0 +1,133 @@
+body {
+    padding-top: 100px;   
+}
+
+.navbar,
+.navbar-header{
+    height: 100px;
+}
+
+.navbar-toggle {
+    margin-top: 33px;
+}
+
+.navbar-brand,
+.navbar-nav{
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+
+.navbar-nav li:last-child {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-nav li a {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 0px;
+    background-color: #f8f8f8;
+}
+
+#social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+#social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+    
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+#social-cont{
+    background-color: #f8f8f8;
+    margin-top: -1px;
+    padding-bottom: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #e7e7e7;
+    border-top: none;
+    width: 250px;
+}
+
+#carousel {
+    display: none;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .navbar-nav{
+        margin-top: 25px;
+        margin-left: 25px;
+    }
+
+    .navbar-nav li {
+        margin-right: 10px;
+        padding-right: 9px;
+    }
+    
+    .navbar-nav li a {
+        text-align: none;
+        border-radius: 5px;
+        background-color: none;
+    }
+    
+    .navbar-nav li:first-child {
+        padding-left: 9px;
+        border-left: 2px solid black;
+    }
+    
+    .navbar-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .navbar-nav li {
+        border-right: 2px solid black;
+    }
+    
+    #carousel {
+        display: block;
+    }
+    
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .navbar-nav{
+        margin-left: 200px;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .navbar-nav{
+        margin-left: 148px;
+    }
+}
+
+/* Large devices (large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+    .navbar-brand{
+        padding-left: 200px;  
+    }
+    
+    .navbar-nav{
+        margin-left: 215px;
+    }
+    
+    .navbar-nav li {
+        margin-right: 30px;
+        padding-right: 27px;
+        border-right: 2px solid black;
+    }
+    
+    .navbar-nav li:first-child {
+        padding-left: 27px;
+        border-left: 2px solid black;
+    }
+}
