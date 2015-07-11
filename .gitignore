@@ -3,3 +3,8 @@
 # Example .gitignore files: https://github.com/github/gitignore
 /bower_components/
 /node_modules/
+/docs/
+/img/
+/fonts/
+/css/bootstrap.css
+/js/bootstrap.js

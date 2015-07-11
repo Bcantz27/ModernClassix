@@ -1,9 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    padding-top: 100px;   
+
+}
+
+#mc_embed_signup {
+    background: #fff;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+
+.show-mobile{
+    display: block;
+}
+
+.show-non-mobile{
+    display: none;
 }
 
 .navbar,
 .navbar-header{
+    z-index: 1;
     height: 100px;
 }
 
@@ -14,7 +34,6 @@ body {
 .navbar-brand,
 .navbar-nav{
     margin-top: -5px;
-    margin-bottom: 0px;
 }
 
 .navbar-nav li:last-child {
@@ -24,7 +43,6 @@ body {
 .navbar-nav li a {
     text-align: center;
     font-size: 20px;
-    margin-bottom: 0px;
     background-color: #f8f8f8;
 }
 
@@ -36,10 +54,9 @@ body {
 
 #social {
     -webkit-transform: scale(0.8);
-    /* Browser Variations: */
-    
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
+
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -55,12 +72,64 @@ body {
     width: 250px;
 }
 
+#music-cont{
+   padding-top: 40px;
+}
+
 #carousel {
     display: none;
+    margin-top: -20px;
+}
+
+#about-cont,
+#roster-cont,
+#contact-cont{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about-cont p1 {
+    margin-top: 25px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#about-cont p2 {
+    margin-top: 5px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#about-cont ul {
+    list-style: none;
+}
+
+footer {
+    background-color: darkgrey;
+    height: 100px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer div > div > p{
+    padding-top: 40px;
 }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    .show-mobile{
+        display: none;
+    }
+
+    .show-non-mobile{
+        display: block;
+    }
+
     .navbar-nav{
         margin-top: 25px;
         margin-left: 25px;
@@ -70,18 +139,18 @@ body {
         margin-right: 10px;
         padding-right: 9px;
     }
-    
+
     .navbar-nav li a {
         text-align: none;
         border-radius: 5px;
         background-color: none;
     }
-    
+
     .navbar-nav li:first-child {
         padding-left: 9px;
         border-left: 2px solid black;
     }
-    
+
     .navbar-nav li:last-child {
         border-bottom: none;
     }
@@ -89,17 +158,19 @@ body {
     .navbar-nav li {
         border-right: 2px solid black;
     }
-    
+
     #carousel {
         display: block;
     }
-    
-}
 
+}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .navbar-nav{
         margin-left: 200px;
+    }
+    #music-cont{
+       padding-top: 0px;
     }
 }
 
@@ -113,19 +184,19 @@ body {
 /* Large devices (large desktops, 1600px and up) */
 @media (min-width: 1600px) {
     .navbar-brand{
-        padding-left: 200px;  
+        padding-left: 200px;
     }
-    
+
     .navbar-nav{
         margin-left: 215px;
     }
-    
+
     .navbar-nav li {
         margin-right: 30px;
         padding-right: 27px;
         border-right: 2px solid black;
     }
-    
+
     .navbar-nav li:first-child {
         padding-left: 27px;
         border-left: 2px solid black;
