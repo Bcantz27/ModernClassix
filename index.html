@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 
-    <script type="text/javascript" src="https://cashmusic.org/public/cashmusic.js"></script>
+    <script type="text/javascript" src="./js/smooth-scroll.js"></script>
 </head>
 
 <body>
@@ -37,13 +37,13 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Music <span class="sr-only">(current)</span></a>
+                    <li data-scroll><a href="index.html">Music</a>
                     </li>
-                    <li><a href="about.html">About</a>
+                    <li><a data-scroll href="#about-cont">About</a>
                     </li>
-                    <li><a href="roster.html">Roster</a>
+                    <li><a data-scroll href="#roster-cont">Roster</a>
                     </li>
-                    <li><a href="contact.html">Contact</a>
+                    <li><a data-scroll href="#contact-cont">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -123,12 +123,123 @@
                 <!--End mc_embed_signup-->
             </div>
             <div class="col-lg-9">
-                <div class="show-non-mobile" style="width:100%; margin:auto; padding:0px; margin-bottom:20px; border:none; background:#000;"><iframe src="http://euphonybeats.com/@eplayer/desktop/index.html" width="100%" height="545" frameborder="0" style="border:none" scrolling="no" ></iframe></div>
-            <div class="show-mobile" style="width:100%; margin:auto; padding:0px; margin-bottom:20px; border:none; background:#000;"><iframe src="http://euphonybeats.com/@eplayer/mobile/index.html" width="100%" height="545" frameborder="0" style="border:none" scrolling="no" ></iframe></div>
+                <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/15542984&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false;buying=true"></iframe>
             </div>
         </div>
     </div>
     <!-- end Music -->
+
+    <!-- About -->
+    <div id="about-cont" class="container">
+        <div class="row">
+            <h1 class="text-center">About</h1>
+            <div class="col-lg-4 col-lg-offset-1">
+                <img style="margin: auto; width: 350px;" class="img-responsive" src="http://placehold.it/350x350"></img>
+                <p class="text-center">Caption</p>
+            </div>
+            <div class="col-lg-6">
+                <p1>Mission Statement Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p1>
+                <p2>Bio Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p2>
+                <h2 class="text-center">What we offer</h1>
+                <ul class="text-center">
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end About -->
+
+    <!-- Roster -->
+    <div id="roster-cont" class="container">
+        <div class="row">
+            <h1 class="text-center">Roster</h1>
+            <div class="col-lg-4">
+                <img style="margin: auto; width: 350px;" class="img-responsive" src="http://placehold.it/350x350"></img>
+                <div id="social-cont" class="text-center center-block">
+                    <a href="#"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-twitter fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-soundcloud fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-youtube fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-instagram fa-3x"></i></a>
+                </div>
+                <p class="text-center">Caption</p>
+            </div>
+            <div class="col-lg-4">
+                <img style="margin: auto; width: 350px;" class="img-responsive" src="http://placehold.it/350x350"></img>
+                <div id="social-cont" class="text-center center-block">
+                    <a href="#"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-twitter fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-soundcloud fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-youtube fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-instagram fa-3x"></i></a>
+                </div>
+                <p class="text-center">Caption</p>
+            </div>
+            <div class="col-lg-4">
+                <img style="margin: auto; width: 350px;" class="img-responsive" src="http://placehold.it/350x350"></img>
+                <div id="social-cont" class="text-center center-block">
+                    <a href="#"><i id="social" class="fa fa-facebook-square fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-twitter fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-soundcloud fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-youtube fa-3x"></i></a>
+                    <a href="#"><i id="social" class="fa fa-instagram fa-3x"></i></a>
+                </div>
+                <p class="text-center">Caption</p>
+            </div>
+        </div>
+    </div>
+    <!-- end Roster -->
+
+    <!-- Contact -->
+    <div id="contact-cont" class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="well well-sm">
+                    <form class="form-horizontal" action="" method="post">
+                        <fieldset>
+                            <legend class="text-center">Contact us</legend>
+
+                            <!-- Name input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="name">Name</label>
+                                <div class="col-md-9">
+                                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Email input-->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                                <div class="col-md-9">
+                                    <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
+                                </div>
+                            </div>
+
+                            <!-- Message body -->
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="message">Your message</label>
+                                <div class="col-md-9">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Form actions -->
+                            <div class="form-group">
+                                <div class="col-md-12 text-right">
+                                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Contact -->
 
 
     <footer>
@@ -146,6 +257,17 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.js"></script>
+
+    <script>
+        smoothScroll.init({
+			speed: 1000,
+			easing: 'easeInOutCubic',
+			offset: 0,
+			updateURL: true,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
+		});
+    </script>
 </body>
 
 </html>
