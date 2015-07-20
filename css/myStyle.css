@@ -1,16 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico|Bangers|Fjalla+One);
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
+body{
+  background-color: #556677;
+}
 
+.baseBlue{
+    color:white;
+    background-color: #225599;
+    border-color: #225599;
+}
+
+.greyBlue{
+    color:white;
+    background-color: #556677;
+    border-color: #556677;
+}
+
+.darkGrey{
+    color:white;
+    background-color: #3D444C;
+    border-color: #3D444C;
+}
+
+.black {
+    color: #2B2B2B;
+}
+
+.heading{
+    font-size: 54px;
+    font-weight: 300;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.subheading{
+    font-size: 32px;
+    font-weight: 300;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 #mc_embed_signup {
     background: #fff;
-    clear: left;
     font: 14px Helvetica, Arial, sans-serif;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+}
+
+.well{
+    -webkit-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 17px 0px rgba(0,0,0,0.75);
+}
+
+.control-label{
+    color: black;
 }
 
 .show-mobile{
@@ -21,9 +74,13 @@ body {
     display: none;
 }
 
-.navbar,
-.navbar-header{
+.navbar{
     z-index: 1;
+    height: 100px;
+    border-bottom: 1px solid black;
+}
+
+.navbar-header{
     height: 100px;
 }
 
@@ -31,7 +88,17 @@ body {
     margin-top: 33px;
 }
 
-.navbar-brand,
+.navbar-brand{
+    height: 100%;
+    width: 100%;
+    margin-top: -75px;
+}
+
+.navbar-brand img{
+    width: 250px;
+    margin-top: -15px;
+}
+
 .navbar-nav{
     margin-top: -5px;
 }
@@ -42,17 +109,20 @@ body {
 
 .navbar-nav li a {
     text-align: center;
-    font-size: 20px;
+    font-size: 38px;
     background-color: #f8f8f8;
+    font-family: 'Bangers', cursive;
 }
 
 #social:hover {
+    color: #376bf8;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
 }
 
 #social {
+    color: white;
     -webkit-transform: scale(0.8);
     -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
@@ -62,28 +132,30 @@ body {
     -o-transition-duration: 0.5s;
 }
 #social-cont{
-    background-color: #f8f8f8;
+    background-color: #3D444C;
     margin-top: -1px;
     padding-bottom: 3px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    border: 1px solid #e7e7e7;
+    border: 1px solid black;
     border-top: none;
     width: 250px;
 }
 
-#music-cont{
-   padding-top: 40px;
-}
-
 #carousel {
     display: none;
-    margin-top: -20px;
+    margin-top: -21px;
+}
+
+#music-cont{
+   padding-top: 175px;
+    padding-bottom: 50px;
 }
 
 #about-cont,
 #roster-cont,
 #contact-cont{
+    width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -130,9 +202,17 @@ footer div > div > p{
         display: block;
     }
 
+    .navbar-header{
+        width: 250px;
+    }
+
+    .navbar-brand{
+        margin-top: 0px;
+    }
+
     .navbar-nav{
         margin-top: 25px;
-        margin-left: 25px;
+        margin-left: 5px;
     }
 
     .navbar-nav li {
@@ -141,9 +221,19 @@ footer div > div > p{
     }
 
     .navbar-nav li a {
+        color: white;
+        font-size: 24px;
         text-align: none;
         border-radius: 5px;
-        background-color: none;
+        background-color: #3D444C;
+    }
+
+    .navbar-nav li a:visited{
+        color: white;
+    }
+
+    .navbar-nav li a:hover{
+        background-color: white;
     }
 
     .navbar-nav li:first-child {
@@ -166,8 +256,11 @@ footer div > div > p{
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    .navbar-nav li a {
+        font-size: 38px;
+    }
     .navbar-nav{
-        margin-left: 200px;
+        margin-left: 80px;
     }
     #music-cont{
        padding-top: 0px;
@@ -177,7 +270,7 @@ footer div > div > p{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .navbar-nav{
-        margin-left: 148px;
+        margin-left: 250px;
     }
 }
 
@@ -188,7 +281,7 @@ footer div > div > p{
     }
 
     .navbar-nav{
-        margin-left: 215px;
+        margin-left: 350px;
     }
 
     .navbar-nav li {
